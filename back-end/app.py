@@ -5,7 +5,7 @@ from database import conectar
 print("APP CORRETO CARREGADO")
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://site-academia-ratao.netlify.app/"}})
 
 @app.route('/login', methods=['POST'])
 def login():

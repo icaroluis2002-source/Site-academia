@@ -36,7 +36,7 @@ if (loginForm) {
                     dados.nome
                 );
 
-                window.location.href = "dashboard.html";
+                window.location.assign("home.html");
             } else {
                 alert("Email ou senha inválidos");
             }
