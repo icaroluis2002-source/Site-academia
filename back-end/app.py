@@ -9,8 +9,13 @@ CORS(app, resources={r"/*": {"origins": "https://site-academia-ratao.netlify.app
 
 @app.route('/login', methods=['POST'])
 def login():
-
-    dados = request.json
+    try:
+        return jsonify({
+            "json": str(request.json),
+            "headers": str(request.headers)
+        })
+    except Exception as e:
+        return jsonify({"erro": str(e)}), 500
 
     email = dados['email']
     senha = dados['senha']
