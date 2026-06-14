@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia | Área do Aluno</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-area">
+        <img src="../img/logo.png">
+        <span>Minha Academia</span>
+      </div>
+
+      <a href="dashboard.html" class="active">Início</a>
+      <a href="treinos.html">Meus Treinos</a>
+      <a href="pagamentos.html">Pagamentos</a>
+      <a href="perfil.html">Meu Perfil</a>
+
+      <a href="index.html" class="logout">Sair</a>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <h1>Olá, João! 👋</h1>
+      <p class="welcome">Bem-vindo de volta à sua área de aluno.</p>
+
+      <!-- Cards resumo -->
+      <div class="cards-grid">
+        <div class="card">
+          <div class="label">Plano atual</div>
+          <div class="value green">Mensal Premium</div>
+        </div>
+
+        <div class="card">
+          <div class="label">Personal responsável</div>
+          <div class="value">Carlos Souza</div>
+        </div>
+
+        <div class="card">
+          <div class="label">Próximo treino</div>
+          <div class="value">Treino A - Peito/Tríceps</div>
+        </div>
+
+        <div class="card">
+          <div class="label">Status do pagamento</div>
+          <div class="value green">Em dia</div>
+        </div>
+      </div>
+
+      <!-- Treinos -->
+      <div class="table-section">
+        <h2>Meus Treinos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Treino</th>
+              <th>Foco</th>
+              <th>Personal</th>
+              <th>Última atualização</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Treino A</td>
+              <td>Peito / Tríceps</td>
+              <td>Carlos Souza</td>
+              <td>10/06/2026</td>
+            </tr>
+            <tr>
+              <td>Treino B</td>
+              <td>Costas / Bíceps</td>
+              <td>Carlos Souza</td>
+              <td>10/06/2026</td>
+            </tr>
+            <tr>
+              <td>Treino C</td>
+              <td>Pernas</td>
+              <td>Carlos Souza</td>
+              <td>05/06/2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagamentos -->
+      <div class="table-section">
+        <h2>Histórico de Pagamentos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Mês de referência</th>
+              <th>Valor</th>
+              <th>Vencimento</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Junho/2026</td>
+              <td>R$ 99,90</td>
+              <td>10/06/2026</td>
+              <td><span class="status pago">Pago</span></td>
+            </tr>
+            <tr>
+              <td>Julho/2026</td>
+              <td>R$ 99,90</td>
+              <td>10/07/2026</td>
+              <td><span class="status pendente">Pendente</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

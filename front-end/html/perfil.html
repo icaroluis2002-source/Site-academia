@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia | Meu Perfil</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-area">
+        <img src="../img/logo.png">
+        <span>Minha Academia</span>
+      </div>
+
+      <a href="dashboard.html">Início</a>
+      <a href="treinos.html">Meus Treinos</a>
+      <a href="pagamentos.html">Pagamentos</a>
+      <a href="perfil.html" class="active">Meu Perfil</a>
+
+      <a href="index.html" class="logout">Sair</a>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <h1>Meu Perfil</h1>
+      <p class="welcome">Visualize e atualize seus dados cadastrais.</p>
+
+      <div class="table-section">
+        <h2>Dados Pessoais</h2>
+
+        <form id="perfilForm">
+          <div class="input-group">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome">
+          </div>
+
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="input-group">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone">
+          </div>
+
+          <div class="input-group">
+            <label for="senha">Nova senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Deixe em branco para manter a atual">
+          </div>
+
+          <button type="submit" class="btn-primary" style="max-width: 200px;">Salvar alterações</button>
+        </form>
+      </div>
+
+      <!-- Matrícula -->
+      <div class="table-section">
+        <h2>Informações da Matrícula</h2>
+        <table>
+          <tbody>
+            <tr>
+              <td>Plano</td>
+              <td>Mensal Premium</td>
+            </tr>
+            <tr>
+              <td>Personal responsável</td>
+              <td>Carlos Souza</td>
+            </tr>
+            <tr>
+              <td>Data de matrícula</td>
+              <td>15/01/2026</td>
+            </tr>
+            <tr>
+              <td>Academia</td>
+              <td>Ratos de Academia - Unidade Centro</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </main>
+  </div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
